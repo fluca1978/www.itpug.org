@@ -1,0 +1,686 @@
+/* --- GENERAL RULES --- */
+
+/*
+
+Blu scuro: 283B65
+Grigio: B6B6B6
+Arancione: #EC5800
+Celestino: #00B1EF;
+
+*/
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #283B65;
+	font: 82%/1.2 georgia, "Trebuchet MS", helvetica, sans-serif;
+}
+
+h1, h3
+{
+	color: #EC5800;
+	clear: both;
+}
+
+h2, h4
+{
+	color: #00B1EF;
+	clear: both;
+}
+
+h2, h3, h4, p, ul { margin-top: 0; }
+
+h1
+{
+	font-size: 150%;
+	margin: 0 0 .5em .5em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+h2
+{
+	font-size: 150%;
+	margin: 1em 0 .5em .5em;
+}
+
+h3
+{
+	font-size: 120%;
+	margin: .5em 0 .5em .5em;
+}
+
+h4
+{
+	font-size: 100%;
+	margin: .5em 0 .5em .5em;
+}
+
+img { border: none; }
+
+acronym, abbr {
+	border: none;
+}
+
+address {
+	font-style: normal;
+	margin: .5em 0 .5em .5em;
+}
+
+a {
+	padding: 1px;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+a:link { color: #333; }
+a:visited { color: #333; }
+
+a:hover, a:active
+{
+	color: #fff;
+	background-color: #283B65;
+}
+
+strong { }
+
+strong.stronger { border-bottom: 1px dotted; }
+
+.hidden {
+	position: absolute;
+	left: 0px;
+	top: -900px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+#accessibility_bar {
+	margin: 0;
+	padding: 0;
+	margin-top: 2px;
+	padding-bottom: 25px;
+	background-image: url(http://www.itpug.org/themes/itpug/itpug-alto.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+#accessibility_bar ul {
+	margin-bottom: 5px;
+}
+
+#accessibility_bar ul {
+        margin: 0px;
+        padding: 0px;
+        padding-right: 5px;
+        list-style-type: none;
+        display: inline;
+}
+
+#accessibility_bar ul li {
+        padding: 0 .2em;
+        margin: 0;
+        display: inline;
+}
+
+#accessibility_bar ul li:after {
+        content: ' | ';
+}
+
+
+#alternate_languages {
+        letter-spacing: 0;
+        font-weight: normal;
+        text-align: left;
+        color: #EC5800;
+        margin-left: 1em;
+        width: 35%;
+        float: left;
+}
+
+div#container
+{
+	padding: 0;
+	margin: 0;
+	clear: both;
+	border-top: 1px solid #888;
+}
+
+div#accessibility_bar {
+	font-size: x-small;
+}
+
+
+div#skip {
+        letter-spacing: 0;
+        font-weight: normal;
+        text-align: right;
+        color: #EC5800;
+        margin-right: 1em;
+        width: 45%;
+        float: right;
+}
+
+div#skip ul {
+}
+
+div#intro {
+	margin: 0;
+	padding: 0;
+	background-color: #00A8E0;
+	background-image: url(http://www.itpug.org/themes/itpug/itpug-basso.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-bottom: 64px;
+}
+
+div#intro #motto {
+	margin: 0;
+	width: 55%;
+	float: right;
+	text-align: right;
+	vertical-align: middle;
+	background-image: url(http://www.itpug.org/themes/itpug/top-right.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding-right: 20px;
+}
+
+div#intro #motto img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+body#home h1 {
+	position: absolute;
+	left: 0px;
+	top: -900px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+div#percorso {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background-color: #B6B6B6;
+	font-size: 90%;
+	color: #fff;
+	background-image: url(http://www.itpug.org/themes/itpug/grey-bottom-left.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+div#percorso div {
+	padding: .5em;
+	padding-left: 2em;
+	background-image: url(http://www.itpug.org/themes/itpug/grey-bottom-right.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+div#percorso ul {
+	margin: 0;
+	padding: 0;
+	padding-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	letter-spacing: 0;
+	font-weight: normal;
+	display: inline;
+}
+
+div#percorso ul li {
+	display: inline;
+	padding-left: 2px;
+}
+
+div#percorso ul li:before {
+	content: ' > ';
+}
+
+div#percorso a
+{
+	color: #fff;
+	padding: 3px;
+}
+
+
+div#percorso a:link { 	color: #fff; }
+div#percorso a:visited { 	color: #fff; }
+
+div#percorso a:hover,
+div#percorso a:active { background-color: #555;}
+
+div#link {
+	margin: 0;
+	padding: 2px;
+	padding-top: 1em;
+	text-align: left;
+	background-color: #fff;
+	font-size: 85%;
+	margin-left: 20px;
+	clear: both;
+}
+
+div#link ul {
+	margin: 0;
+	padding: 0;
+	padding-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+
+div#link ul li {
+	display: inline;
+	padding-left: 2px;
+}
+
+div#link a
+{
+	border: none;
+	border-top: 1px solid #B6B6B6;
+	border-left: 1px solid #B6B6B6;
+	border-right: 1px solid #B6B6B6;
+	padding: 5px;
+}
+
+div#link a:link { color: #283B65; }
+div#link a:visited { color: #283B65; }
+
+div#link a:hover, div#link a:active
+{
+	background-color: #283B65;
+	color: #fff;
+}
+
+div#submenu {
+	float: left;
+	width: 19%;
+	margin: 0;
+	margin-top: 20px;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	border: 1px solid #999;
+	margin-left: 10px;
+	background-color: #F0F0F0;
+	background-image: url(http://www.itpug.org/themes/itpug/submenu.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;	
+}
+
+div#submenu ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+
+div#submenu a
+{
+	border: 0;
+	padding: 3px;
+}
+
+div#submenu a:link {  }
+div#submenu a:visited { }
+div#submenu a:hover,
+div#submenu a:active { background-color: #555;}
+div#submenu ul li {
+	padding: .2em;
+}
+div#submenu ul li:before {
+        content: ' > ';
+}
+
+div#submenu ul li.current_menu:before {
+        content: ' >> ';
+}
+
+div#contenuto {
+	border-top: 1px solid #B6B6B6;
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: left;
+}
+
+div#contenuto.with_menu {
+	float: right;
+	width: 74%;
+	margin-left: 0;
+}
+
+div#contenuto.without_menu p {
+	width: 90%;
+	margin-left: 1em;
+}
+
+div#contenuto p
+{
+	margin-bottom: .5em;
+	font-weight: normal;
+	line-height: 1.5em;
+}
+
+div#contenuto li
+{
+	margin-bottom: .5em;
+	font-weight: normal;
+	line-height: 1.5em;
+}
+
+div#contenuto dt {
+	margin: 0;
+	padding: 0;
+	margin-top: 2em;
+	padding-left: 5px;
+	border-left: 1px dotted #F5F5F5;
+}
+
+#end {
+	clear: both;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	margin-top: 2em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	line-height: 1.4em;
+}
+
+#copyright {
+	vertical-align: middle;
+	padding: 1em 0;
+	margin: 0;
+	padding-top: 10px;
+	font-size: 90%;
+	background-color: #EC5800;
+	color: #fff;
+	text-align: center;
+	background-image: url(http://www.itpug.org/themes/itpug/footer.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+
+
+
+#copyright a {
+	color: #fff;
+	background-color: #EC5800;
+	padding: 1px;
+}
+
+#copyright a:link, #copyright a:visited {
+	color: #fff;
+	background-color: #EC5800;
+}
+
+#copyright a:hover {
+	color: #EC5800;
+	background: #fff;
+}
+
+#technologies {
+	clear: left;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	padding-right: 20px;
+	min-width: 150px;
+	width: 30%;
+}
+
+div#technologies ul {
+	margin: 0;
+	padding: 0;
+	padding-right: 5px;
+	list-style-type: none;
+	font-size: 90%;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+
+div#technologies ul li {
+	display: inline;
+	margin-left: 10px;
+	font-size: 80%;
+}
+
+#thanksto {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-size: 80%;
+	clear: both;
+}
+
+
+ul.download {
+	list-style-type: none;
+}
+
+ul.download img {
+	vertical-align: middle;
+	border: 0;
+}
+
+#policies {
+	font-size: 90%;
+	letter-spacing: 0;
+	font-weight: normal;
+	color: #EC5800;
+	margin-right: 1em;
+	text-align: center;
+}
+
+#policies ul {
+	margin: 0px;
+	padding: 0px;
+	padding-right: 5px;
+	list-style-type: none;
+	display: inline;
+	font-size: 90%;
+}
+
+#policies ul li {
+	padding: 0 .2em;
+	margin: 0;
+	display: inline;
+}
+
+#policies ul li:after {
+        content: ' | ';
+}
+
+span.error {
+	color: #c00;
+}
+
+fieldset {
+	margin-top: 1em;
+	padding: 0.5em;
+	border: 1px solid #EC5800;
+}
+
+textarea {
+	margin-top: 1em;
+	padding: 0.5em;
+	border: 1px solid #EC5800;
+	background-color: #eee;
+}
+
+label {
+	margin-top: 1em;
+}
+
+input.text {
+	border: 1px solid #EC5800;
+	margin-bottom: .5em;
+	padding: .2em;
+}
+
+input.button {
+	background-color: #EC5800;
+	color: white;
+	margin-top: 1em;
+	margin-bottom: .5em;
+	padding: .2em;
+	border: 1px solid #283B65;
+}
+
+table {
+	border: 0;
+	margin: 1em;
+}
+
+caption {
+	margin: 1em;
+	font-size: 120%;
+	color: #00B1EF;
+}
+
+tr {
+	border: 0
+}
+
+th {
+	border: 1px solid #EC5800;
+	padding: .2em;
+}
+
+td {
+	border: 1px solid #283B65;
+	padding: .2em;
+}
+
+div.alert {
+	vertical-align: middle;
+	padding: 1em 0;
+	margin: 0;
+	padding-top: 10px;
+	background-color: #EC5800;
+	color: #fff;
+	text-align: center;
+	background-image: url(http://www.itpug.org/themes/itpug/footer.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	margin-bottom: 2em;
+}
+
+div.alert p {
+	margin: 1em;
+	margin-right: 300px;
+}
+
+ul.release {
+	margin: 0;
+	padding: 0;
+	margin-left: 2em;
+	list-style-type: none;
+}
+
+ul.release ul {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+ul.release ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+div.module {
+	border: 1px solid #eee;
+	padding: 10px;
+}
+
+div.module p {
+	font-family: courier;
+	padding-top: 1em;
+	font-size: small;
+	
+}
+
+div#pgday_banner {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+div#pgday_banner img {
+	border: 1px solid #283B65;
+}
+
+div#pgday_banner a
+{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+div#pgday_banner a:link { color: #283B65; }
+div#pgday_banner a:visited { color: #283B65; }
+
+div#pgday_banner a:hover, div#pgday_banner a:active
+{
+	background-color: transparent;
+}
+
+dl.eventi dt {
+	font-size: 125%;
+	font-weight: bold;
+	color: #EC5800;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+dl.eventi dd {
+	margin-top: 1em;
+}
+
+dl ul {
+	list-style-type: none;
+}
+
+#chapter dl {
+	background-color: #f5f5f5;
+	padding: 0;
+	background-image: url(http://www.itpug.org/themes/itpug/vitruvian.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+#chapter dl dt {
+	font-size: 125%;
+	font-weight: bold;
+	color: #EC5800;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+#chapter dl dd {
+	margin-top: 1em;
+	font-size: small;
+}

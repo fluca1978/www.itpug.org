@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+
+<!-- Mirrored from www.itpug.org/postgresql-84/index.it.html by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 20 Mar 2015 11:07:01 GMT -->
+<head>
+ <title>Associazione culturale "Italian PostgreSQL Users Group (ITPUG)": PostgreSQL 8.4</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <meta name="author" content="Gabriele Bartolini" />
+<meta name="keywords" content="postgresql, postgres, italia, postgresql 8.4, postgres 8.4, windowing functions, common table expressions" />
+<meta name="description" content="Scopri le novit&agrave; di PostgreSQL 8.4: windowing function, common table expression, permessi a livello di colonna, ecc." />
+ <link type="text/css" rel="stylesheet" href="http://www.itpug.org/themes/itpug/main.css" />
+ <link type="text/css" rel="stylesheet" href="http://www.itpug.org/themes/itpug/home.css" />
+ <script src="http://www.itpug.org/pgsearch/addengine.js" type="text/javascript" charset="iso-8859-1"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11269384-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</head>
+
+<body id="postgresql-84">
+
+
+<div id="accessibility_bar">
+   <div id="skip">
+  <ul>
+    <li><a href="#contenuto">salta direttamente al contenuto</a></li>
+    <li><a href="#link">salta direttamente ai link di navigazione</a></li>
+  </ul>
+
+   </div>
+
+<br style="clear: both" />
+</div>
+
+<div id="intro">
+<div id="motto">
+<div>
+<img src="http://www.itpug.org/themes/itpug/postgresql.jpg" width="178" height="56" alt="PostgreSQL" />
+
+<img src="http://www.itpug.org/themes/itpug/avanzato.jpg" width="183" height="56" alt="Il più avanzato database open source al mondo"  />
+ </div>
+</div>
+</div>
+  
+
+<!-- Box principale -->
+<div id="container">
+
+  	<div>
+  
+	<div id="percorso"><div><strong>Sei in:</strong>
+<ul>
+	<li><a href="http://www.itpug.org/index.it.html">Home</a></li>
+	<li><a href="http://www.itpug.org/postgresql/index.it.html">PostgreSQL</a></li>
+	<li>PostgreSQL 8.4</li>
+</ul>
+</div></div>
+
+	<div id="link">
+	<ul>
+		<li><a href="http://www.itpug.org/index.it.html" title="vai al documento riguardante 'Benvenuto!'">Home</a></li>
+<li><a href="http://www.itpug.org/association/index.it.html" title="vai al documento riguardante 'L'associazione Italian PostgreSQL Users Group'">Associazione</a></li>
+<li><a href="http://www.itpug.org/postgresql/index.it.html" title="vai al documento riguardante 'PostgreSQL'">PostgreSQL</a></li>
+<li><a href="http://docs.itpug.org/" title="vai al documento riguardante 'Documentazione di PostgreSQL'">Documentazione</a></li>
+<li><a href="http://www.itpug.org/pgday/index.it.html" title="vai al documento riguardante 'Il PostgreSQL Day, la giornata nazionale di PostgreSQL'">PGDay</a></li>
+<li><a href="http://www.itpug.org/chapter/index.it.html" title="vai al documento riguardante 'I chapter dell'associazione sul territorio italiano'">Chapter</a></li>
+<li><a href="http://www.itpug.org/eventi/index.it.html" title="vai al documento riguardante 'Gli eventi a cui ha partecipato o parteciper&agrave; ITPUG'">Eventi</a></li>
+<li><a href="http://www.itpug.org/download/index.it.html" title="vai al documento riguardante 'Download di materiale informativo e software basato inerenti PostgreSQL'">Download</a></li>
+<li><a href="http://www.itpug.org/support/index.it.html" title="vai al documento riguardante 'Come ottenere supporto dalla comunit&agrave; di PostgreSQL'">Supporto</a></li>
+<li><a href="http://www.itpug.org/contact/index.it.html" title="vai al documento riguardante 'Informazioni su come contattare l'associazione'">Contattaci</a></li>
+<li><a href="http://www.itpug.org/links/index.it.html" title="vai al documento riguardante 'Collegamenti a siti esterni di interesse su PostgreSQL'">Link utili</a></li>
+	</ul>
+	</div>
+
+  </div>
+  
+	<div id="submenu">
+	<ul>
+<li><a href="http://www.itpug.org/postgresql-92/index.it.html" title="vai al documento riguardante ''">PostgreSQL 9.2</a></li>
+<li><a href="http://www.itpug.org/postgresql-91/index.it.html" title="vai al documento riguardante ''">PostgreSQL 9.1</a></li>
+<li class="current_menu">PostgreSQL 8.4</li>
+<li><a href="http://www.itpug.org/licenza-di-postgresql/index.it.html" title="vai al documento riguardante ''">Licenza</a></li>
+	</ul>
+	</div>
+
+<div id="contenuto" class="with_menu">
+<h1>PostgreSQL 8.4</h1>
+<p><strong>1 luglio 2009:</strong> Il PostgreSQL Global Development Group ha rilasciato la versione 8.4, continuando il rapido sviluppo del database open source pi&ugrave; avanzato al mondo. Questa versione contiene un elevato numero
+di miglioramenti che rendono pi&ugrave; semplice che mai l'amministrazione, l'interrogazione e la programmazione dei database PostgreSQL. Grazie alle 293 tra migliorie e novit&agrave; della versione 8.4,
+ci sono ancora pi&ugrave; ragioni che suggeriscono di scegliere PostgreSQL per il vostro prossimo progetto.</p>
+
+<p>La maggior parte delle modifiche presenti in PostgreSQL 8.4 riguardano nuovi strumenti e nuovi comandi dedicati all'amministrazione o al monitoraggio, unitamente a nuove versioni di soluzioni
+gi&agrave; presenti nella versione 8.3. Ogni utente, indipendentemente dalle proprie caratteristiche preferite, trover&agrave; pi&ugrave; facile e produttivo il lavoro quotidiano.</p>
+
+<p><em>"Usiamo PostgreSQL gi&agrave; da sette anni, e stiamo aspettando con trepidazione molte delle novit&agrave; della versione 8.4, in particolare i permessi sulle colonne, la localizzazione a livello di singolo database, i match parziali per gli indici GIN e le eccezioni definite dall'utente"</em>, afferma Jeffrey Webster, CTO di ZooLoo.com. <em>"PostgreSQL ci ha permesso di crescere senza sacrificare l'integrit&agrave; dei dati."</em></p>
+
+<p>Tra i miglioramenti pi&ugrave; attesi troviamo:</p>
+
+<ul>
+<li><strong>Restore del database in parallelo</strong>, per velocizzare fino ad 8 volte un ripristino da backup</li>
+<li><strong>Permessi per singola colonna</strong>, per permettere un controllo pi&ugrave; granulare dei dati sensibili</li>
+<li><strong>Supporto alla collation per singolo database</strong>, per rendere PostgreSQL pi&ugrave; utile in ambienti multilingua</li>
+<li><strong>Aggiornamenti in loco</strong> tramite pg_migrator beta, per permettere aggiornamenti dalla 8.3 alla 8.4 senza lunghe interruzioni del servizio</li>
+<li><strong>Nuovi strumenti per il monitoraggio delle interrogazioni</strong>, per dare agli amministratori maggiori informazioni sull'attivit&agrave; delle query</li>
+</ul>
+
+<p>La versione 8.4 rende pi&ugrave; facile l'analisi dei dati tramite le funzioni avanzate dello standard ANSI SQL2003, quali le <strong>funzioni di windowing</strong>, le <strong>common table expression</strong>
+e le <strong>join ricorsive</strong>.  <em>"Queste strutture di query aumentano notevolmente l'espressivit&agrave; del dialetto SQL di PostgreSQL, permettendo agli utenti di formulare con una sola query delle domande interessanti che sarebbero state impossibili in precedenza"</em>, spiega Sailesh Krishnamurti, fondatore di Truviso. Le migliorie alle stored procedure, come i <strong>parametri di default</strong> ed i <strong>parametri variadici</strong>, rendono pi&ugrave; semplice e compatta la programmazione del server di database.</p>
+
+<p>La nuova versione migliora le prestazioni delle applicazioni, come commenta Kevin Grittner, amministratore di database per il sistema giudiziario del Wisconsin: <em>"PostgreSQL continua a migliorare le
+prestazioni ad ogni versione. La versione 8.4 ha aggiunto diverse ottimizzazioni, come le semi-join e le anti-join, le quali permettono una notevole riduzione dei tempi di esecuzione di alcune delle nostre
+query pi&ugrave; intensive."</em></p>
+
+<p>Queste caratteristiche implicano che PostgreSQL coprir&agrave; un numero di utenze maggiore di prima, come ad esempio sta accadendo al progetto OpenStreetMap.
+<em>"In fase di progettazione della nuova versione delle API di OpenStreetMap, emerse la necessit&agrave; di affidarsi a un database di classe superiore che,
+oltre a coprire le funzionalit&agrave; desiderate, risultasse adeguato alle dimensioni richieste dal progetto. Bench&eacute; ci fossero molti database open source,
+la scelta ovvia &egrave; stata PostgreSQL."</em>, dice Tom Hughes, amministratore di sistema per OpenStreetMap.</p>
+
+<h2>Elenco delle caratteristiche</h2>
+<p>
+La versione 8.4 ha un numero senza precedenti di nuove caratteristiche. Al fine di poterle elencare tutte, abbiamo creato delle pagine dedicate:
+</p>
+<ul>
+<li><a href="http://www.postgresql.org/about/press/features84">Lista completa delle caratteristiche (solo in inglese)</a></li>
+<li><a href="http://www.postgresql.org/about/featurematrix">Matrice delle caratteristiche (solo in inglese)</a></li>
+<li><a href="http://www.postgresql.org/docs/8.4/static/release-8-4.html">Note di rilascio</a></li>
+</ul>
+
+<h2>Guida alle novità (in italiano)</h2>
+
+<ul>
+<li><a href="http://blog.2ndquadrant.it/it/2009/06/postgresql-84-novita-sql.html">Le novità del linguaggio SQL</a></li>
+<li><a href="http://blog.2ndquadrant.it/it/2009/06/postgresql-84-le-novita-per-amministrazione.html">Le novità per gli amministratori di PostgreSQL</a></li>
+<li><a href="http://blog.2ndquadrant.it/it/2009/06/postgresql-84-novita-stored-procedure.html">Le novità per i programmatori di stored procedure</a></li>
+<li><a href="http://blog.2ndquadrant.it/it/2009/06/postgresql-84-le-altre-novita.html">Le restanti novità</a></li>
+</ul>
+</div>
+
+	<br style="clear: both" />
+</div>
+<!-- container -->
+
+<div id="end">
+
+	<div id="copyright">
+		<strong lang="en"><a href="http://www.postgresql.org/" hreflang="en">PostgreSQL, Il pi&ugrave; avanzato database libero</a></strong><br />
+		Copyright &copy; 1996 - 2015 PostgreSQL Global Development Group<br />
+		Copyright &copy; 2015 Italian PostgreSQL Users Group <br />
+	</div>
+	
+	
+	<div id="technologies">
+		<div class="hidden">
+			Compliance to the standards:
+		</div>
+		<ul>
+			<li>
+				<a href="http://validator.w3.org/check?uri=referer"><acronym title="World Wide Web Consortium">W3C</acronym> <acronym title="Extensible HyperText Markup Language">XHTML</acronym> 1.0</a> 
+			</li>
+			<li>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer"><acronym title="World Wide Web Consortium">W3C</acronym> <acronym title="Cascading Style Sheets">CSS</acronym> 2.0</a> 
+			</li>
+		</ul>
+	</div>
+
+<div id="policies">
+<ul>
+<li><a href="http://www.itpug.org/privacy/index.it.html">Privacy</a></li>
+<li><a href="http://www.itpug.org/thanks/index.it.html">Ringraziamenti</a></li>
+</ul>
+</div>
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.itpug.org/postgresql-84/index.it.html by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 20 Mar 2015 11:07:01 GMT -->
+</html>

@@ -1,0 +1,207 @@
+/* --- GENERAL RULES --- */
+
+/*
+
+Blu scuro: 283B65
+Grigio: B6B6B6
+Arancione: #EC5800
+Celestino: #00B1EF;
+
+*/
+
+
+body#home h1 {
+	position: absolute;
+	left: 0px;
+	top: -900px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+
+div#home_highlight {
+	margin: 0;
+	width: 70%;
+	float: left;
+	background-color: #f5f5f5;
+	padding: 0;
+	background-image: url(http://www.itpug.org/themes/itpug/vitruvian.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+
+}
+
+div#home_highlight dl {
+	padding: 0;
+	margin: 2em 149px 1em 1em;
+}
+
+div#home_highlight dt
+{
+	color: #EC5800;
+	font-size: 120%;
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	font-weight: bold;
+}
+
+div#home_highlight dd {
+	margin: 0;
+	padding: 0;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+div#home_subscribe
+{
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	float: right;
+	font-size: small;
+	color: #283B65;
+}
+
+div#home_subscribe h2
+{
+	text-transform: uppercase;
+	font-size: small;
+	margin-left: 0;
+}
+
+div#home_subscribe p
+{
+	font-size: x-small;
+}
+
+div#home_release
+{
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	float: right;
+	font-size: small;
+	color: #283B65;
+}
+
+div#home_release h2
+{
+	text-transform: uppercase;
+	font-size: small;
+	margin-left: 0;
+}
+
+div#home_release ul {
+	font-size: x-small;
+}
+
+div#home_release ul ul {
+}
+
+div#home_release ul ul li {
+}
+
+div#home_body {
+	margin: 0;
+	padding: 0;
+	clear: both;
+	
+	margin-top: 2em;
+}
+
+div#home_body h2
+{
+	text-transform: uppercase;
+	font-size: small;
+	margin-left: 0;
+}
+
+div#home_rss {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div#home_chapters {
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-right: 1px solid #F0F0F0;
+	float: left;
+}
+
+div#home_chapters p {
+	font-size: small;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+div#home_chapters ul
+{
+	margin: 0;
+	padding: 0;
+	margin-left: 0;
+	list-style-type: none;
+}
+
+div#home_chapters ul li {
+	font-size: small;
+	color: #EC5800;
+	font-weight: bold;
+}
+
+div#home_pwn_it {
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-right: 1px solid #F0F0F0;
+	float: left;
+}
+
+div#home_pwn_it p {
+	font-size: xx-small;
+	padding-top: 1em;
+}
+
+div#home_donazioni {
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-right: 1px solid #F0F0F0;
+	float: left;
+}
+
+div#home_donazioni p {
+	font-size: x-small;
+	padding-top: 1em;
+}
+
+div#home_donazioni form {
+	padding-top: 1em;
+	text-align: center;
+}
+
+dl.rss_feed {
+	font-size: x-small;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	margin-bottom: 1em;
+}
+
+dl.rss_feed dt {
+	font-size: smaller;
+	margin: 0;
+	padding: 0;
+}
+
+dl.rss_feed dd {
+	margin: 0;
+	padding: 0;
+	margin-left: 1em;
+}
